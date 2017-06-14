@@ -17,6 +17,7 @@ html, body {
 
 body {
   width: 100%;
+  background-color: black;
 }
 
 h2 {
@@ -83,9 +84,8 @@ a {
 
     @media (max-width: 600px) {
       position: static;
-      margin: 20px auto 60px auto;
+      margin: 20px auto 0px auto;
       width: 250px;
-
     }
 }
 
@@ -135,6 +135,10 @@ section {
 
   @media (min-width: 960px) {
     height:100%;
+  }
+
+  @media (max-width:600px) {
+    padding-bottom: 50px;
   }
 }
 
