@@ -2,7 +2,7 @@
 @import url('http://fonts.googleapis.com/earlyaccess/notosanskr.css');
 
 $default-font-family: 'Noto Sans KR', sans-serif;
-$default-font-size: 11px;
+$default-font-size: 13pt;
 
 * {
   font-family: $default-font-family;
@@ -11,16 +11,12 @@ $default-font-size: 11px;
 
 html, body {
   font-family: $default-font-family;
-  // font-size: $default-font-size;
-}
-
-html {
-    width: 100%;
+  font-size: $default-font-size;
+  height: 100%;
 }
 
 body {
   width: 100%;
-
   background-color: black;
   color: white;
 }
@@ -62,17 +58,17 @@ a {
 .doit-button {
     position: absolute;
     left: 50%;
-    bottom: 70px;
-    margin-left: -70px;
+    bottom: 35px;
+    margin-left: -109px;
     display: block;
     z-index: 10;
     text-align: center;
     overflow: hidden;
 
-    @media (max-width:768px) {
+    @media (max-width:1024px) {
       right: 5%;
       margin-left: 0;
-      bottom: 115px;
+      bottom: 35px;
     }
 
     @media (max-width: 600px) {
@@ -81,6 +77,15 @@ a {
       width: 250px;
 
     }
+}
+
+.visible-xs {
+  @media (min-width:481px) {
+    display: none;
+  }
+  @media (max-width:480px) {
+    display: block;
+  }
 }
 
 .text-blue {
@@ -99,7 +104,7 @@ a {
   width: 100%;
   position: absolute;
   right: 0px;
-  bottom: 25%;
+  top: 52px;
   z-index: 1;
 
   @media (max-width: 1360px) {
@@ -117,11 +122,15 @@ a {
 
 section {
   width: 100%;
+
+  @media (min-width: 960px) {
+    height:100%;
+  }
 }
 
 .intro-section {
     height: 100%;
-    padding-top: 20px;
+    padding: 20px auto;
     text-align: center;
     background: #000;
     color: white;
