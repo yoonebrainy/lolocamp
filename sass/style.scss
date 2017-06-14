@@ -44,6 +44,10 @@ a {
   }
 }
 
+.container {
+  width: 85%;
+}
+
 .container-fluid .row {
   padding-left: -15px !important;
   padding-right: -15px !important;
@@ -101,6 +105,10 @@ a {
   right: 0px;
   bottom: 25%;
   z-index: 1;
+}
+
+.text-gray {
+  color: #aaa;
 }
 
 .intro-section {
