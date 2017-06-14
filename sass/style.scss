@@ -12,7 +12,6 @@ $default-font-size: 13pt;
 html, body {
   font-family: $default-font-family;
   font-size: $default-font-size;
-  height: 100%;
 }
 
 body {
@@ -164,6 +163,7 @@ section {
     text-align: center;
     background: #fff;
     color: black;
+    padding-bottom: 20px;
 
     @media (max-width: 990px) {
       height: auto;
