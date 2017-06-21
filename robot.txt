@@ -1,0 +1,15 @@
+User-agent: *
+Disallow: /
+Disallow: /*.sass-cache$
+Disallow: /*-webfont*$
+Disallow: /*?
+Disallow: /*.gif$
+Disallow: /*.jpg$
+Disallow: /cgi-bin/
+Disallow: /js/
+Disallow: /node_modules/
+Disallow: /sass/
+Disallow: /~name/
+Disallow: /.gitignore
+Disallow: /gulpfile.js
+Disallow: /package.json
